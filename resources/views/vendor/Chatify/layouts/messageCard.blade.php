@@ -35,7 +35,7 @@ $timeAndSeen = "<span data-time='$created_at' class='message-time'>
                 if ($isSender){
                     $user_name = $user->name;
                 } else {
-                    $sub_user = \DB::table('users')->where('id', $chat_message->to_id)->first();
+                    $sub_user = \DB::table('users')->where('id', $chat_message->from_id)->first();
                     if(isset($sub_user)){
                         $user_name = $sub_user->name;
                     }
