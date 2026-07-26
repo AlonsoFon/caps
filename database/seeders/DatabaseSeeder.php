@@ -24,6 +24,5 @@ class DatabaseSeeder extends Seeder
         \DB::table("users")->where("email", "=", "alonso_fon@hotmail.com")->update([
             "role_id" => 1
         ]);
-        $this->call(UserRolesTableSeeder::class);
     }
 }
