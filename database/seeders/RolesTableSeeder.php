@@ -48,7 +48,7 @@ class RolesTableSeeder extends Seeder
         ];
 
         foreach ($roles as $role) {
-            DB::table('roles')->updateOrInsert(
+            \DB::table('roles')->updateOrInsert(
                 ['id' => $role['id']],
                 $role
             );
