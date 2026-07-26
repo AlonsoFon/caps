@@ -63,7 +63,7 @@ class DataTypesTableSeeder extends Seeder
                 'display_name_singular' => 'Role',
                 'display_name_plural' => 'Roles',
                 'icon' => 'voyager-lock',
-                'model_name' => 'App\\Models\\Role',
+                'model_name' => 'TCG\\Voyager\\Models\\Role',
                 'policy_name' => NULL,
                 'controller' => 'TCG\\Voyager\\Http\\Controllers\\VoyagerRoleController',
                 'description' => NULL,
