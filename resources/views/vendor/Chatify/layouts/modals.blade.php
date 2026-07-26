@@ -43,29 +43,52 @@
                       ></div>
                       <p class="upload-avatar-details"></p>
                       <label class="app-btn a-btn-primary update" style="background-color:{{$messengerColor}}">
-                          Upload New
+                          Trocar Foto de Perfil
                           <input class="upload-avatar chatify-d-none" accept="image/*" name="avatar" type="file" />
                       </label>
                       {{-- Dark/Light Mode  --}}
                       <p class="divider"></p>
-                      <p class="app-modal-header">Dark Mode <span class="
-                        {{ Auth::user()->dark_mode > 0 ? 'fas' : 'far' }} fa-moon dark-mode-switch"
-                         data-mode="{{ Auth::user()->dark_mode > 0 ? 1 : 0 }}"></span></p>
-                      {{-- change messenger color  --}}
-                      <p class="divider"></p>
-                      {{-- <p class="app-modal-header">Change {{ config('chatify.name') }} Color</p> --}}
-                      <div class="update-messengerColor">
-                      @foreach (config('chatify.colors') as $color)
-                        <span style="background-color: {{ $color}}" data-color="{{$color}}" class="color-btn"></span>
-                        @if (($loop->index + 1) % 5 == 0)
-                            <br/>
-                        @endif
-                      @endforeach
-                      </div>
+                        <a href="{{ route('logout') }}"
+                        class="app-btn a-btn-secuntary"
+                        style="text-decoration: none; color: white; margin-bottom: 20px; background: black;"
+                        onclick="event.preventDefault(); logout();">
+                            Sair da conta
+                        </a>
+
+                        <script>
+                            function logout() {
+                                fetch('{{ route('logout') }}', {
+                                    method: 'POST',
+                                    headers: {
+                                        'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                                        'Accept': 'application/json',
+                                        'Content-Type': 'application/json'
+                                    }
+                                })
+                                .then(response => {
+                                    if (response.redirected) {
+                                        window.location.href = response.url;
+                                    } else {
+                                        window.location.href = '/';
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error(error);
+                                });
+                            }
+                        </script>
+                        <a href="/profile"
+                        class="app-btn a-btn-secuntary"
+                        style="text-decoration: none; color: white; margin-bottom: 20px; background: blue;"
+                        >
+                            Editar Perfil
+                        </a>
+                        
+                      
                   </div>
                   <div class="app-modal-footer">
-                      <a href="javascript:void(0)" class="app-btn cancel">Cancel</a>
-                      <input type="submit" class="app-btn a-btn-success update" value="Save Changes" />
+                      <a href="javascript:void(0)" class="app-btn cancel">Cancelar</a>
+                      <input type="submit" class="app-btn a-btn-success update" value="Salvar" />
                   </div>
               </form>
           </div>

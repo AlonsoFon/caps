@@ -29,16 +29,25 @@ class ProfileController extends Controller
     public function update(ProfileUpdateRequest $request): RedirectResponse
     {
         $request->user()->fill($request->validated());
-        $affected_rows = SubUser::where('user_id', $request->user()->id)->delete();
         $people = [];
         if(isset($request->people)) {
             foreach ($request->people as $sub_user) {
+                $haveuser =SubUser::where('user_id', $request->user()->id)
+                    ->where('name', $sub_user)
+                    ->first();
+
+                if($haveuser || $sub_user == null) {
+                    continue;
+                }
+
                 $people[] = SubUser::create([
                     'user_id' => $request->user()->id,
                     'name' => $sub_user,
                 ]);
             }
         }
+        $affected_rows = SubUser::where('user_id', $request->user()->id)->whereNotIn('name', $request->people)->delete();
+
 
         if ($request->user()->isDirty('email')) {
             $request->user()->email_verified_at = null;

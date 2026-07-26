@@ -8,9 +8,11 @@ $timeAndSeen = "<span data-time='$created_at' class='message-time'>
 <div class="message-card @if($isSender) mc-sender @endif" data-id="{{ $id }}">
     {{-- Delete Message Button --}}
     @if ($isSender)
+        <!--
         <div class="actions">
             <i class="fas fa-trash delete-btn" data-id="{{ $id }}"></i>
         </div>
+        -->
     @endif
     {{-- Card --}}
     @php
