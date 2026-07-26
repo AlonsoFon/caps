@@ -12,16 +12,22 @@
                     $relationshipData = isset($data) ? $data : $dataTypeContent;
                     $model = app($options->model);
                     $query = $model::where($options->key, $relationshipData->{$options->column})->first();
-                    $name_label = $query->{$options->label};
+                    if (isset($query)) {
+                        $name_label = $query->{$options->label};
+                    } else {
+                        $name_label = __('voyager::generic.no_results');
+                    }
 
-                    if($model->slug == "estoques"){
+                    if($model->slug == "estoques" && isset($query)){
                         $name_label = \DB::table('estoques')
                             ->join('produtos', 'estoques.produto_id', '=', 'produtos.id')
                             ->where('estoques.id', $query->{$options->key})
                             ->value('produtos.name');
                     }
+                    if ($model instanceof \TCG\Voyager\Models\Role) {
+                        $model->slug = 'roles';
+                    }
                 @endphp
-
                 @if (isset($query))
                     @if (isset($model->slug))
                         <p><a
