@@ -113,7 +113,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 6,
+                'order' => 7,
             ),
             6 => 
             array (
@@ -129,7 +129,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 7,
+                'order' => 8,
             ),
             7 => 
             array (
@@ -145,25 +145,9 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 8,
+                'order' => 9,
             ),
             8 => 
-            array (
-                'id' => 9,
-                'data_type_id' => 1,
-                'field' => 'user_belongsto_role_relationship',
-                'type' => 'relationship',
-                'display_name' => 'Role',
-                'required' => 0,
-                'browse' => 1,
-                'read' => 1,
-                'edit' => 1,
-                'add' => 1,
-                'delete' => 0,
-                'details' => '{"model":"TCG\\\\Voyager\\\\Models\\\\Role","table":"roles","type":"belongsTo","column":"role_id","key":"id","label":"name","pivot_table":"roles","pivot":"0","taggable":"0"}',
-                'order' => 10,
-            ),
-            9 => 
             array (
                 'id' => 11,
                 'data_type_id' => 1,
@@ -177,9 +161,9 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 12,
+                'order' => 13,
             ),
-            10 => 
+            9 => 
             array (
                 'id' => 12,
                 'data_type_id' => 2,
@@ -195,7 +179,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => NULL,
                 'order' => 1,
             ),
-            11 => 
+            10 => 
             array (
                 'id' => 13,
                 'data_type_id' => 2,
@@ -211,7 +195,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => NULL,
                 'order' => 2,
             ),
-            12 => 
+            11 => 
             array (
                 'id' => 14,
                 'data_type_id' => 2,
@@ -227,7 +211,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => NULL,
                 'order' => 3,
             ),
-            13 => 
+            12 => 
             array (
                 'id' => 15,
                 'data_type_id' => 2,
@@ -243,7 +227,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => NULL,
                 'order' => 4,
             ),
-            14 => 
+            13 => 
             array (
                 'id' => 16,
                 'data_type_id' => 3,
@@ -256,10 +240,10 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 0,
                 'add' => 0,
                 'delete' => 0,
-                'details' => NULL,
+                'details' => '{}',
                 'order' => 1,
             ),
-            15 => 
+            14 => 
             array (
                 'id' => 17,
                 'data_type_id' => 3,
@@ -272,10 +256,10 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => NULL,
+                'details' => '{}',
                 'order' => 2,
             ),
-            16 => 
+            15 => 
             array (
                 'id' => 18,
                 'data_type_id' => 3,
@@ -288,10 +272,10 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 0,
                 'add' => 0,
                 'delete' => 0,
-                'details' => NULL,
+                'details' => '{}',
                 'order' => 3,
             ),
-            17 => 
+            16 => 
             array (
                 'id' => 19,
                 'data_type_id' => 3,
@@ -304,10 +288,10 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 0,
                 'add' => 0,
                 'delete' => 0,
-                'details' => NULL,
+                'details' => '{}',
                 'order' => 4,
             ),
-            18 => 
+            17 => 
             array (
                 'id' => 20,
                 'data_type_id' => 3,
@@ -320,10 +304,10 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => NULL,
+                'details' => '{}',
                 'order' => 5,
             ),
-            19 => 
+            18 => 
             array (
                 'id' => 21,
                 'data_type_id' => 1,
@@ -331,15 +315,15 @@ class DataRowsTableSeeder extends Seeder
                 'type' => 'text',
                 'display_name' => 'Role',
                 'required' => 0,
-                'browse' => 1,
-                'read' => 1,
-                'edit' => 1,
-                'add' => 1,
-                'delete' => 1,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
                 'details' => '{}',
-                'order' => 9,
+                'order' => 10,
             ),
-            20 => 
+            19 => 
             array (
                 'id' => 22,
                 'data_type_id' => 4,
@@ -355,7 +339,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 1,
             ),
-            21 => 
+            20 => 
             array (
                 'id' => 23,
                 'data_type_id' => 4,
@@ -371,7 +355,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"validation":{"rules":["required"]}}',
                 'order' => 2,
             ),
-            22 => 
+            21 => 
             array (
                 'id' => 24,
                 'data_type_id' => 4,
@@ -387,7 +371,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"validation":{"rules":["required"]}}',
                 'order' => 3,
             ),
-            23 => 
+            22 => 
             array (
                 'id' => 25,
                 'data_type_id' => 4,
@@ -403,7 +387,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"validation":{"rules":["required"]}}',
                 'order' => 4,
             ),
-            24 => 
+            23 => 
             array (
                 'id' => 26,
                 'data_type_id' => 4,
@@ -419,7 +403,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 5,
             ),
-            25 => 
+            24 => 
             array (
                 'id' => 27,
                 'data_type_id' => 4,
@@ -435,7 +419,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 6,
             ),
-            26 => 
+            25 => 
             array (
                 'id' => 28,
                 'data_type_id' => 5,
@@ -451,7 +435,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 1,
             ),
-            27 => 
+            26 => 
             array (
                 'id' => 29,
                 'data_type_id' => 5,
@@ -467,7 +451,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 2,
             ),
-            28 => 
+            27 => 
             array (
                 'id' => 30,
                 'data_type_id' => 5,
@@ -483,7 +467,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"validation":{"rules":["required"]}}',
                 'order' => 4,
             ),
-            29 => 
+            28 => 
             array (
                 'id' => 31,
                 'data_type_id' => 5,
@@ -499,7 +483,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"validation":{"rules":["required"]}}',
                 'order' => 5,
             ),
-            30 => 
+            29 => 
             array (
                 'id' => 32,
                 'data_type_id' => 5,
@@ -515,7 +499,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"validation":{"rules":["required"]}}',
                 'order' => 6,
             ),
-            31 => 
+            30 => 
             array (
                 'id' => 33,
                 'data_type_id' => 5,
@@ -531,7 +515,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 7,
             ),
-            32 => 
+            31 => 
             array (
                 'id' => 34,
                 'data_type_id' => 5,
@@ -547,7 +531,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 8,
             ),
-            33 => 
+            32 => 
             array (
                 'id' => 35,
                 'data_type_id' => 5,
@@ -563,7 +547,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\Produto","table":"produtos","type":"belongsTo","column":"produto_id","key":"id","label":"name","pivot_table":"ch_favorites","pivot":"0","taggable":"0"}',
                 'order' => 3,
             ),
-            34 => 
+            33 => 
             array (
                 'id' => 36,
                 'data_type_id' => 6,
@@ -579,7 +563,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 1,
             ),
-            35 => 
+            34 => 
             array (
                 'id' => 37,
                 'data_type_id' => 6,
@@ -595,7 +579,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 2,
             ),
-            36 => 
+            35 => 
             array (
                 'id' => 38,
                 'data_type_id' => 6,
@@ -611,7 +595,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 3,
             ),
-            37 => 
+            36 => 
             array (
                 'id' => 39,
                 'data_type_id' => 6,
@@ -627,7 +611,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"validation":{"rules":["required"]}}',
                 'order' => 6,
             ),
-            38 => 
+            37 => 
             array (
                 'id' => 40,
                 'data_type_id' => 6,
@@ -643,7 +627,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"validation":{"rules":["required"]}}',
                 'order' => 7,
             ),
-            39 => 
+            38 => 
             array (
                 'id' => 41,
                 'data_type_id' => 6,
@@ -659,7 +643,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"default":"Pendente","options":{"Pendente":"Pendente","Entregue":"Entregue","Cancelado":"Cancelado"},"validation":{"rules":["required"]}}',
                 'order' => 9,
             ),
-            40 => 
+            39 => 
             array (
                 'id' => 42,
                 'data_type_id' => 6,
@@ -675,7 +659,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 10,
             ),
-            41 => 
+            40 => 
             array (
                 'id' => 43,
                 'data_type_id' => 6,
@@ -691,7 +675,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 11,
             ),
-            42 => 
+            41 => 
             array (
                 'id' => 44,
                 'data_type_id' => 6,
@@ -707,7 +691,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\Estoque","table":"estoques","type":"belongsTo","column":"estoque_id","key":"id","label":"produto_id","pivot_table":"ch_favorites","pivot":"0","taggable":"0"}',
                 'order' => 5,
             ),
-            43 => 
+            42 => 
             array (
                 'id' => 45,
                 'data_type_id' => 6,
@@ -723,7 +707,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\User","table":"users","type":"belongsTo","column":"user_id","key":"id","label":"name","pivot_table":"ch_favorites","pivot":"0","taggable":"0"}',
                 'order' => 4,
             ),
-            44 => 
+            43 => 
             array (
                 'id' => 46,
                 'data_type_id' => 6,
@@ -739,7 +723,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 8,
             ),
-            45 => 
+            44 => 
             array (
                 'id' => 47,
                 'data_type_id' => 1,
@@ -753,9 +737,9 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 5,
+                'order' => 6,
             ),
-            46 => 
+            45 => 
             array (
                 'id' => 48,
                 'data_type_id' => 1,
@@ -769,9 +753,9 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 11,
+                'order' => 12,
             ),
-            47 => 
+            46 => 
             array (
                 'id' => 49,
                 'data_type_id' => 1,
@@ -785,9 +769,9 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 13,
+                'order' => 14,
             ),
-            48 => 
+            47 => 
             array (
                 'id' => 50,
                 'data_type_id' => 1,
@@ -801,7 +785,23 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 14,
+                'order' => 15,
+            ),
+            48 => 
+            array (
+                'id' => 52,
+                'data_type_id' => 1,
+                'field' => 'user_belongsto_role_relationship',
+                'type' => 'relationship',
+                'display_name' => 'roles',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{"model":"TCG\\\\Voyager\\\\Models\\\\Role","table":"roles","type":"belongsTo","column":"role_id","key":"id","label":"name","pivot_table":"ch_favorites","pivot":"0","taggable":"0"}',
+                'order' => 16,
             ),
         ));
         

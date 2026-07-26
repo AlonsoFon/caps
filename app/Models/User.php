@@ -49,8 +49,8 @@ class User extends \TCG\Voyager\Models\User
         return $this->hasMany('App\Models\SubUser')->orderBy('name', 'asc');
     }
 
-    public function user()
+    public function role()
     {
-        return $this->belongsTo('TCG\Voyager\Models\Role');
+        return $this->belongsTo('TCG\Voyager\Models\Role', 'role_id', 'id');
     }
 }

@@ -27,7 +27,7 @@ class DataTypesTableSeeder extends Seeder
                 'display_name_singular' => 'User',
                 'display_name_plural' => 'Users',
                 'icon' => 'voyager-person',
-                'model_name' => 'App\\Models\\User',
+                'model_name' => 'TCG\\Voyager\\Models\\User',
                 'policy_name' => 'TCG\\Voyager\\Policies\\UserPolicy',
                 'controller' => 'TCG\\Voyager\\Http\\Controllers\\VoyagerUserController',
                 'description' => NULL,
@@ -35,7 +35,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"desc","default_search_key":null,"scope":null}',
                 'created_at' => '2026-07-26 02:16:15',
-                'updated_at' => '2026-07-26 21:31:27',
+                'updated_at' => '2026-07-26 22:37:42',
             ),
             1 => 
             array (
@@ -63,15 +63,15 @@ class DataTypesTableSeeder extends Seeder
                 'display_name_singular' => 'Role',
                 'display_name_plural' => 'Roles',
                 'icon' => 'voyager-lock',
-                'model_name' => 'TCG\\Voyager\\Models\\Role',
+                'model_name' => 'App\\Models\\Role',
                 'policy_name' => NULL,
                 'controller' => 'TCG\\Voyager\\Http\\Controllers\\VoyagerRoleController',
-                'description' => '',
+                'description' => NULL,
                 'generate_permissions' => 1,
                 'server_side' => 0,
-                'details' => NULL,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"desc","default_search_key":null,"scope":null}',
                 'created_at' => '2026-07-26 02:16:15',
-                'updated_at' => '2026-07-26 02:16:15',
+                'updated_at' => '2026-07-26 22:13:12',
             ),
             3 => 
             array (

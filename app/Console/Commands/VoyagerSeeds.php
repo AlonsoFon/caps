@@ -40,7 +40,7 @@ class VoyagerSeeds extends Command
 
 
         $tables = collect([
-            "roles","user_roles","permissions","permission_role","data_types","data_rows","menus","menu_items","settings"
+            "data_types","data_rows","menus","menu_items","settings"
         ]);
 
 

@@ -6,8 +6,8 @@
 
         @if ($options->type == 'belongsTo')
 
-            @if (isset($view) && ($view == 'browse' || $view == 'read'))
 
+            @if (isset($view) && ($view == 'browse' || $view == 'read'))
                 @php
                     $relationshipData = isset($data) ? $data : $dataTypeContent;
                     $model = app($options->model);
@@ -24,7 +24,7 @@
                             ->where('estoques.id', $query->{$options->key})
                             ->value('produtos.name');
                     }
-                    if ($model instanceof \TCG\Voyager\Models\Role) {
+                    if ($model instanceof TCG\Voyager\Models\Role) {
                         $model->slug = 'roles';
                     }
                 @endphp
@@ -40,6 +40,7 @@
                     <p>{{ __('voyager::generic.no_results') }}</p>
                 @endif
             @else
+
                 <select class="form-control select2-ajax" name="{{ $options->column }}"
                     data-get-items-route="{{ route('voyager.' . $dataType->slug . '.relation') }}"
                     data-get-items-field="{{ $row->field }}"
@@ -290,5 +291,4 @@
         cannot make relationship because {{ $options->model }} does not exist.
 
     @endif
-
 @endif
